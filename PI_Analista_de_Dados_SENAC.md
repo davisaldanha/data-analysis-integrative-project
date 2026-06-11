@@ -189,7 +189,8 @@ Ao final do projeto, cada aluno ou dupla deve entregar:
 - [ ] `relatorio_final.pdf` — Relatório escrito (máx. 5 páginas)
 - [ ] Apresentação oral (10–15 min) com perguntas do docente
 
-Todos os arquivos devem ser compactados em um `.zip` com o nome: `PI_NomeAluno_AnalistaDados.zip`
+Todos os arquivos devem ser compactados em um `.zip` com o nome: `PI_NomeAluno_AnalistaDados.zip`  
+Link para entrega: (https://classroom.google.com/c/Nzk3NDM3NTk1OTA2/a/Nzk4MTY0NzE3NTQw/details)
 
 ---
 
