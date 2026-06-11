@@ -1,8 +1,7 @@
 # Projeto Integrador — Qualificação Profissional em Análise de Dados
 **Instituição:** Senac  
 **Curso:** Qualificação Profissional — Analista de Dados  
-**Nível:** Iniciante a Intermediário  
-**Carga Horária Estimada do PI:** 20 horas  
+**Nível:** Iniciante a Intermediário   
 **Entrega Final:** Relatório em PDF + Dashboard Power BI + Notebook Python (.ipynb)
 
 ---
@@ -46,8 +45,6 @@ O docente disponibilizará o arquivo `vendas_varejo_fácil.csv` com as seguintes
 | `forma_pagamento` | str | Forma de pagamento (Cartão, PIX, Boleto, Dinheiro) |
 | `avaliacao_cliente` | int | Nota de satisfação (1 a 5) |
 
-> **Observação ao docente:** O dataset pode ser gerado com a biblioteca `Faker` e `NumPy` do Python. Um script de geração será fornecido ao final deste documento como **Anexo A**.
-
 ---
 
 ## 4. Perguntas de Negócio
@@ -60,19 +57,23 @@ Os alunos deverão responder às seguintes perguntas utilizando Python e/ou Powe
 3. Quantas vendas foram realizadas no total?
 
 **Análise Temporal**
+
 4. Como o faturamento evoluiu mês a mês? Houve sazonalidade?
 5. Qual foi o mês com maior e menor volume de vendas?
 
 **Análise por Categoria e Produto**
+
 6. Qual categoria gerou maior receita?
 7. Quais são os 5 produtos mais vendidos em quantidade?
 8. Qual categoria tem a maior média de avaliação dos clientes?
 
 **Análise Geográfica**
+
 9. Quais são os 5 estados com maior faturamento?
 10. Existe relação entre a cidade/estado e a forma de pagamento preferida?
 
 **Análise de Clientes**
+
 11. Qual a distribuição das formas de pagamento utilizadas?
 12. Qual a média de avaliação geral dos clientes? Como ela varia por categoria?
 
@@ -117,7 +118,7 @@ Tarefas:
 - Usar `groupby()` para agregar dados por categoria, estado, mês, etc.
 - Usar `value_counts()` para análises de frequência
 - Calcular métricas com NumPy (ex: média, mediana, desvio padrão da avaliação)
-- Criar pelo menos **3 gráficos** com `matplotlib` ou `seaborn`:
+- Criar pelo menos **3 gráficos** com `matplotlib` ou `seaborn`: (Estes gráficos poderão ser substituídos pelo Dashboard)
   - Gráfico de barras: faturamento por categoria
   - Gráfico de linha: evolução mensal do faturamento
   - Gráfico de pizza ou barras horizontais: distribuição por forma de pagamento
@@ -179,20 +180,7 @@ Entregável: Relatório em PDF + apresentação oral.
 
 ---
 
-## 7. Cronograma Sugerido
-
-| Semana | Atividade |
-|---|---|
-| Semana 1 | Apresentação do PI, formação de grupos, download do dataset, Etapa 1 |
-| Semana 2 | Etapa 2 — Limpeza e tratamento dos dados |
-| Semana 3 | Etapa 3 — Análise exploratória e gráficos em Python |
-| Semana 4 | Etapa 4 — Construção do Dashboard no Power BI |
-| Semana 5 | Etapa 5 — Relatório final e preparação da apresentação |
-| Semana 6 | **Apresentações finais e entrega dos arquivos** |
-
----
-
-## 8. Entregáveis — Resumo
+## 7. Entregáveis — Resumo
 
 Ao final do projeto, cada aluno ou dupla deve entregar:
 
@@ -205,7 +193,7 @@ Todos os arquivos devem ser compactados em um `.zip` com o nome: `PI_NomeAluno_A
 
 ---
 
-## 9. Dicas e Orientações ao Aluno
+## 8. Dicas e Orientações ao Aluno
 
 - **Não copie e cole código sem entender** — o docente poderá perguntar sobre qualquer linha durante a apresentação.
 - **Comente seu código** com `#` explicando o que cada bloco faz.
@@ -216,7 +204,7 @@ Todos os arquivos devem ser compactados em um `.zip` com o nome: `PI_NomeAluno_A
 
 ---
 
-## 10. Recursos de Apoio
+## 9. Recursos de Apoio
 
 | Recurso | Link |
 |---|---|
@@ -347,11 +335,7 @@ df["mes"] = df["data_venda"].dt.month
 df["ano"] = df["data_venda"].dt.year
 df["trimestre"] = df["data_venda"].dt.quarter
 
-df["avaliacao_cliente"].fillna(df["avaliacao_cliente"].median(), inplace=True)
-df["desconto"].fillna(0, inplace=True)
-
-df.drop_duplicates(inplace=True)
-df["categoria"] = df["categoria"].str.strip().str.title()
+# ... (continuar com os demais procedimentos)
 
 # --- ETAPA 3: Análise Exploratória ---
 
@@ -389,3 +373,4 @@ plt.show()
 
 *Documento elaborado pelo docente para uso exclusivo na turma de Qualificação Profissional em Análise de Dados — Senac.*  
 *Versão 1.0 — Junho/2026*
+*Material gerado com apoio de IA*
