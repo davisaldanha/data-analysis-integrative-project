@@ -372,5 +372,5 @@ plt.show()
 ---
 
 *Documento elaborado pelo docente para uso exclusivo na turma de Qualificação Profissional em Análise de Dados — Senac.*  
-*Versão 1.0 — Junho/2026*
+*Versão 1.0 — Junho/2026*  
 *Material gerado com apoio de IA*
